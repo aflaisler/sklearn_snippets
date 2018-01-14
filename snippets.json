@@ -12,7 +12,7 @@
     }, {
       "name": "decomposition",
       "code": [
-        "from sklearn.decomposition import SVD, TruncatedSVD",
+        "from sklearn.decomposition import TruncatedSVD",
         "from sklearn.decomposition import PCA, KernelPCA, SparsePCA",
         "from sklearn.decomposition import NMF"
 
@@ -83,7 +83,8 @@
         "from textblob import TextBlob",
         "from gensim import corpora, models, matutils",
         "from sklearn.decomposition import LatentDirichletAllocation",
-        "from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer, DictVectorizer, HashingVectorizer"
+        "from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer, HashingVectorizer",
+        "from sklearn.feature_extraction import DictVectorizer"
       ]
     }, {
       "name": "pipeline",
@@ -118,8 +119,12 @@
       "name": "scraping",
       "code": ["from base64 import b64encode",
         "from bs4 import BeautifulSoup",
-        "from scrapy.selector import Selector",
-        "from scrapy.http import HtmlResponse"
+        "from scrapy.selector import Selector #By far the best",
+        "from scrapy.http import HtmlResponse",
+        "from selenium import webdriver",
+        "from selenium.webdriver.common.by import By",
+        "from selenium.webdriver.support.ui import Select",
+        "from selenium.common.exceptions import NoSuchElementException"
 
       ]
     }, {
